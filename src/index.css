@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* || UTILITY CLASSES */
+.errmsg {
+  color: firebrick;
+}
+
+/* || GENERAL STYLES */
+
+body {
+  font: 1.5rem 'Nunito', sans-serif;;
+  min-height: 100vh;
+  background-color: #0F172A;
+  color: #fff;
+}
+
+input, button {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  padding: 1rem;
+}
+
+section {
+  width: min(100%, 500px);
+}
+
+a, a:visited {
+  color: whitesmoke;
+}
+
+a:hover, a:focus {
+  color: rgba(245, 245, 245, 0.9);
+}
+
+/* || LOGIN */
+
+.login form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.login input, .login button {
+  padding: 0.5em;
+  border-radius: 15px;
+}
+
+/* || PAGES */
+
+.public, .welcome, .users {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.public main {
+  flex-grow: 1;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: 1rem;
+}
+
+.users ul {
+  list-style-type: none;
+}
