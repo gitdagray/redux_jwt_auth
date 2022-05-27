@@ -4,7 +4,7 @@
 
 **Description:**
 
-This repository shares the code applied during the [YouTube Tutorial](https://youtu.be/QIVjr76Y6Yo). 
+This repository shares the code applied during the [YouTube Tutorial](https://youtu.be/-JJFQ9bkUbo). 
 
 Build the backend REST API that I use for authentication in this tutorial with my [7 hour Node JS for Beginners course](https://youtu.be/f2EqECiTBL8) on my channel.
 
