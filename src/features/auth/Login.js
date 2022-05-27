@@ -34,11 +34,12 @@ const Login = () => {
             setPwd('')
             navigate('/welcome')
         } catch (err) {
-            if (!err?.response) {
+            if (!err?.originalStatus) {
+                // isLoading: true until timeout occurs
                 setErrMsg('No Server Response');
-            } else if (err.response?.status === 400) {
+            } else if (err.originalStatus === 400) {
                 setErrMsg('Missing Username or Password');
-            } else if (err.response?.status === 401) {
+            } else if (err.originalStatus === 401) {
                 setErrMsg('Unauthorized');
             } else {
                 setErrMsg('Login Failed');
